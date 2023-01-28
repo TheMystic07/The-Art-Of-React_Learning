@@ -2,17 +2,18 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import PropTypes from 'prop-types'
 
-function TopNavbar() {
+function TopNavbar(props) {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">{props.title}</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="#pricing">{props.aboutText}</Nav.Link>
             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -35,6 +36,14 @@ function TopNavbar() {
       </Container>
     </Navbar>
   );
+}
+TopNavbar.propTypes = {
+title : PropTypes.string.isRequired ,
+aboutText : PropTypes.string
+}
+
+TopNavbar.defaultProps={
+  title :  'Something '
 }
 
 export default TopNavbar;
