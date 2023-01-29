@@ -13,7 +13,7 @@ root.render(
   <React.StrictMode>
     <Navbar title="Mystic" aboutText="About us " />
     <App />
-    <TextForms />
+    <TextForms textTitle="Text forms" />
   </React.StrictMode>
 );
 
