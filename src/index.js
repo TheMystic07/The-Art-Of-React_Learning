@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Navbar from "./Components/Navbar"
 import TextForms from "./Components/TextForms"
+import About from "./Components/About"
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
@@ -13,7 +14,8 @@ root.render(
   <React.StrictMode>
     <Navbar title="Mystic" aboutText="About us " />
     <App />
-    <TextForms textTitle="Text forms" />
+    <About />
+    {/* <TextForms textTitle="Text forms" /> */}
   </React.StrictMode>
 );
 
