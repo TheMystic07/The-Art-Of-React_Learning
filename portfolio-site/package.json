@@ -1,5 +1,5 @@
 {
-  "name": "bg-changer",
+  "name": "portfolio-site",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^0.9.496",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

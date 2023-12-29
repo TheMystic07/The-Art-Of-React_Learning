@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import Icecream from './Icecream'
 
 function App() {
   const [color, setColor] = useState("coral")
@@ -10,6 +10,7 @@ function App() {
        style={{backgroundColor:color}} >
       
       <div className="wraper fixed  flex  flex-wrap justify-center bottom-12 inset-x-0 px-2">
+        <Icecream />
         <div className="flex flex-wrap justify-center gap-2  shadow-lg bg-black  opacity-50  px-3 py-2 rounded-xl ">
 
         <button className='outline-none px-4  py-1 rounded-2xl text-white shadow-xl opacity-100 ' style={{backgroundColor:"red" }} onClick={() =>setColor("red")}>RED</button>
